@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Live streaming"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:typeface="serif"
+        android:gravity="center"
+        android:id="@+id/txtlive"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boader"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/txtlive"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_url"
+            android:maxLines="4"
+            android:layout_margin="8dp"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:selectAllOnFocus="true"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+
+            android:text="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"/>
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="play"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
